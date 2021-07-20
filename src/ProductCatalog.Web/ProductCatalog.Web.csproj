@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <UserSecretsId>e0f72c02-7dac-4c44-abf8-364f6de99e14</UserSecretsId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="3.1.17">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ProductCatalog.Controllers\ProductCatalog.Controllers.csproj" />
+    <ProjectReference Include="..\ProductCatalog.Storage.Sqlite\ProductCatalog.Storage.Sqlite.csproj" />
+    <ProjectReference Include="..\ProductCatalog\ProductCatalog.csproj" />
+  </ItemGroup>
+
+</Project>
